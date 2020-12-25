@@ -4,7 +4,7 @@ int Fibonacci(int n) {
 	if (n == 0)
 		return 0;
 	// 기저 사례 처리 2
-	if (n == 1 || n == 2)
+	if (n == 1)
 		return 1;
 
 	return Fibonacci(n - 1) + Fibonacci(n - 2);
@@ -17,7 +17,7 @@ int Fibonacci_dp(int n) {
 	if (n == 0)
 		return cache[n] = 0;
 	// 기저 사례 처리 2
-	if (n == 1 || n == 2)
+	if (n == 1)
 		return cache[n] = 1;
 	// 캐시메모리에 -1 이 아닌 다른 값이 존재 -> 이전에 계산했었던 값이므로 바로 리턴
 	if (cache[n] != -1)  
