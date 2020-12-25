@@ -1,8 +1,9 @@
 // DP 를 사용하지 않고 구현한 피보나치 수열
 int Fibonacci(int n) {
+	// 기저 사례 처리 1
 	if (n == 0)
 		return 0;
-
+	// 기저 사례 처리 2
 	if (n == 1 || n == 2)
 		return 1;
 
